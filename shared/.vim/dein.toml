@@ -1,0 +1,51 @@
+# How to add plugin
+# repo='Author's GitHubID/Repository name'
+# 
+# [[plugins]]
+# repo = '/'
+
+# Status Line
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+[[plugins]]
+repo = 'itchyny/vim-gitbranch'
+# Filename auto-complete plugin
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+# Filetree plugin
+[[plugins]]
+repo = 'preservim/nerdtree'
+# Preview markdown
+[[plugins]]
+repo = 'previm/previm'
+# Support Lnaguage
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+
+# -----Colorscheme plugins-----
+[[plugins]]
+repo = 'tomasr/molokai'
+[[plugins]]
+repo = 'joshdick/onedark.vim'
+[[plugins]]
+repo = 'gosukiwi/vim-atom-dark'
+[[plugins]]
+repo = 'raphamorim/lucario'
+[[plugins]]
+repo = 'jdkanani/vim-material-theme'
+[[plugins]]
+repo = 'jacoborus/tender.vim'
+[[plugins]]
+repo = 'vim-scripts/chlordane.vim'
+[[plugins]]
+repo = 'altercation/vim-colors-solarized'
+[[plugins]]
+repo = 'w0ng/vim-hybrid'
+[[plugins]]
+repo = 'lxmzhv/vim'
