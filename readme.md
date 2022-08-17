@@ -1,6 +1,6 @@
 # NITKC-WEP/dotfiles  
 ## What will be installed?
-Please refer to [require.txt](https://github.com/NITKC-WEP/dotfiles/master/require.md)
+Please refer to [require.txt](https://github.com/NITKC-WEP/dotfiles/blob/master/require.md)
 
 ## Basic installation  
 ```
