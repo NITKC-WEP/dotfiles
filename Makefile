@@ -4,14 +4,11 @@ install: ## Install softwares and scripts.
 link: ## Create & update symbolic link 
 	@cd installer && chmod 777 link.sh && ./link.sh 
 
-env: ## Setup developing environment
-	@cd installer && chmod 777 env.sh && ./env.sh 
-
 unlink: ## Unlink symbolic link 
 	@cd installer && chmod 777 unlink.sh && ./unlink.sh 
   
 .DEFAULT_GOAL := help 
-.PHONY: help install link env unlink 
+.PHONY: help install link unlink 
   
 help:  ## You can read help about this Makefile. 
 	@echo "***NITKC-WEP/dotfiles***" 

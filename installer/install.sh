@@ -9,11 +9,11 @@
 # 
 
 echo ""
-echo "#######################################"
-echo "#         dotfiles ver 1.0            #"
-echo "#          >>install.sh<<             #"
-echo "#######################################"
-echo "Copyright (c) 2021-2022 Midori Ado All Rights Reserved."
+echo "#################################################"
+echo "#         dotfiles for sever ver 2.0            #"
+echo "#                 >>install.sh<<                #"
+echo "#################################################"
+echo "Copyright (c) 2022 Aoi Kondo, WEP inc. All Rights Reserved."
 echo ""
 echo "Hello! Welcome to install.sh!"
 echo ""
@@ -49,14 +49,6 @@ do
     ./$f
 done
 
-cd $MAIN_PATH/debian/bin/final
-for f in *.sh
-do
-    sudo apt update
-    chmod 777 $f
-    ./$f
-done
-
 cd $MAIN_PATH/debian/etc
 for f in *.sh
 do
@@ -64,10 +56,6 @@ do
     chmod 777 $f
     ./$f
 done
-
-cd $MAIN_PATH/installer
-chmod 777 env.sh
-./env.sh
 
 echo "########################"
 echo "#      SETUP ZSH       #"

@@ -10,19 +10,11 @@
 echo "########################"
 echo "#  MAKE SYMBOLIC LINK  #"
 echo "########################"
-cd $MAIN_PATH/shared
+cd $MAIN_PATH/files
 for f in .??*
 do
     [[ "$f" == ".gitignore" ]] && continue
 
     ln -sf $MAIN_PATH/shared/$f ~/$f
-    echo "$f linked!"
-done
-cd $MAIN_PATH/shared/Linux
-for f in .??*
-do
-    [[ "$f" == ".gitignore" ]] && continue
-
-    ln -sf $MAIN_PATH/shared/Linux/$f ~/$f
     echo "$f linked!"
 done
