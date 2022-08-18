@@ -6,11 +6,6 @@
 #     /___|___/_| |_|_|  \___|
 # 
 
-
-alias tmux="tmux -u2"
-alias ide="~/.scripts/ide"
-alias apt-u="~/.scripts/apt-fetch"
-
 # tmux autmatic start
 count=`ps aux | grep tmux | grep -v grep | wc -l`
 if test $count -eq 0; then
