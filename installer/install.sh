@@ -33,7 +33,7 @@ echo "#   INSTALL SOFTWARES  #"
 echo "########################"
 echo "Install general softwere"
 
-cd $MAIN_PATH/debian/bin/init
+cd $MAIN_PATH/bin/init
 for f in *.sh
 do
     sudo apt update
@@ -41,28 +41,13 @@ do
     ./$f
 done
 
-cd $MAIN_PATH/debian/bin/tools
+cd $MAIN_PATH/bin/tools
 for f in *.sh
 do
     sudo apt update
     chmod 777 $f
     ./$f
 done
-
-cd $MAIN_PATH/debian/etc
-for f in *.sh
-do
-    sudo apt update
-    chmod 777 $f
-    ./$f
-done
-
-echo "########################"
-echo "#      SETUP ZSH       #"
-echo "########################"
-curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh|
-zsh
-chsh -s $(which zsh)
 
 echo "#######################################"
 echo "#         INSTALL COMPLETE            #"

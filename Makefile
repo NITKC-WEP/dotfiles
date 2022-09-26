@@ -1,3 +1,6 @@
+export
+MAIN_PATH := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
+
 install: ## Install softwares and scripts.
 	@cd installer && chmod 777 install.sh && ./install.sh 
 
@@ -6,10 +9,10 @@ link: ## Create & update symbolic link
 
 unlink: ## Unlink symbolic link 
 	@cd installer && chmod 777 unlink.sh && ./unlink.sh 
-  
+
 .DEFAULT_GOAL := help 
 .PHONY: help install link unlink 
-  
+
 help:  ## You can read help about this Makefile. 
 	@echo "***NITKC-WEP/dotfiles***" 
 	@echo "You can install dotfiles for Debian. Don't forget write 'sudo'." 
