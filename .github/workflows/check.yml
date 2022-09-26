@@ -1,0 +1,14 @@
+name: CI
+
+on: 
+  push: 
+    branches: [master]
+
+jobs: 
+  Ubuntu: 
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps: 
+      - uses: actions/checkout@v2
+      - name: ubuntu-install
+        run: make install
