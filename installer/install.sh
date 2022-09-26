@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright (c) 2021-2022 Midori Ado All Rights Reserved.
+# Copyright (c) 2021-2022 WEP inc. All Rights Reserved.
 #      _           _        _ _       _
 #     (_)_ __  ___| |_ __ _| | |  ___| |__
 #     | | '_ \/ __| __/ _` | | | / __| '_ \
